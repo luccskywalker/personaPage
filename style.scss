@@ -11,6 +11,9 @@ body {
   float: right;
   font-weight: 900;
   font-size: 25px;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
   margin-right: 2%;
   color: black;
   text-shadow: rgb(255, 255, 255) 3px 0px 0px,
@@ -36,11 +39,14 @@ body {
 .title-text {
   text-align: right;
 }
-.container-menu {
+.side-menu {
+  position: fixed;
+}
+.menu-items {
   margin: 0;
   z-index: 9;
 }
-.container-background {
+.menu-background {
   position: absolute;
   background-color: red;
   height: 100vh;
@@ -48,7 +54,7 @@ body {
   margin: 0;
   transform: skew(-30deg);
   z-index: 0;
-  left: -92%;
+  left: -500px;
 }
 ul {
   list-style-type: none;
@@ -215,4 +221,22 @@ li {
 
 .timeline-item .description {
   margin-bottom: 10px;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  height: 100vh;
+}
+#home {
+  background-image: url(assets/8kqc5vuonrq61.gif);
+  background-size: cover;
+}
+#about {
+  background-image: url(assets/pjx217yd7yi51.png);
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

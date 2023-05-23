@@ -6,33 +6,60 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <section id="side-menu">
-      <div class="container-background"></div>
-      <ul class="container-menu">
+    <section class="side-menu">
+      <div class="menu-background"></div>
+      <ul class="menu-items">
         <li class="item">
-          <div class="layer-2">INÍCIO</div>
+          <a href="#home" class="layer-2">INÍCIO</a>
         </li>
         <li class="item">
-          <div class="layer-1">SOBRE</div>
+          <a href="#about" class="layer-1">SOBRE</a>
         </li>
         <li class="item">
-          <div class="layer-2">PROJETOS</div>
+          <a href="#projects" class="layer-2">PROJETOS</a>
         </li>
         <li class="item">
-          <div class="layer-1">CONTATOS</div>
+          <a href="#contact" class="layer-1">CONTATOS</a>
         </li>
       </ul>
     </section>
-    <main>
-      <div class="content">
-        <div class="title-text">
-          <h3>Hello,</h3>
-          <h2>i'm <b> Lucas</b></h2>
-          <h3>a front-end developer.</h3>
-        </div>
-        <div class="timeline">
-          <ul class="timeline" id="timeline"></ul>
-        </div>
+    <main class="content">
+      <section id="home" class="title-text">
+        <h3>Hello,</h3>
+        <h2>i'm <b> Lucas</b></h2>
+        <h3>a front-end developer.</h3>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello, I'm [Lucas], a junior front-end developer passionate about
+          building engaging and user-friendly websites. I have a strong
+          foundation in HTML, CSS, and JavaScript, and I'm constantly expanding
+          my skills to stay up-to-date with the latest web technologies.
+        </p>
+        <p>
+          Throughout my journey, I have worked on several personal projects that
+          reflect my creativity and problem-solving abilities. Here are a few
+          highlights:
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Your projects content goes here.</p>
+        <ul class="timeline" id="timeline"></ul>
+        <p>
+          I'm always looking for new opportunities to collaborate and learn. If
+          you're interested in working together or want to know more about my
+          projects, please feel free to reach out. You can find my contact
+          information in the section below. Thank you!
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Your contact information goes here.</p>
+      </section>
+      <div class="arrow-container">
+        <div class="arrow"></div>
       </div>
     </main>
     <script src="script.js"></script>
