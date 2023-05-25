@@ -12,6 +12,14 @@ const timelineData = [
     date: "2022-07-10",
     description: "Event 3 description",
   },
+  {
+    date: "2022-07-10",
+    description: "Event 3 description",
+  },
+  {
+    date: "2022-07-10",
+    description: "Event 3 description",
+  },
   // Add more events as needed
 ];
 
