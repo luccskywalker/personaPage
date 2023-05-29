@@ -1,41 +1,40 @@
 // Timeline data
 const timelineData = [
   {
+    title: "Game Collection",
     date: "2022-01-01",
     description: "Event 1 description",
   },
   {
+    title: "Game Collection",
     date: "2022-03-15",
     description: "Event 2 description",
   },
   {
+    title: "Game Collection",
     date: "2022-07-10",
     description: "Event 3 description",
   },
-  {
-    date: "2022-07-10",
-    description: "Event 3 description",
-  },
-  {
-    date: "2022-07-10",
-    description: "Event 3 description",
-  },
-  // Add more events as needed
 ];
 
 // Function to create timeline items
-function createTimelineItem(date, description) {
+function createTimelineItem(title, date, description) {
   const timelineItem = document.createElement("li");
   timelineItem.classList.add("timeline-item");
 
+  const titleElement = document.createElement("div");
+  titleElement.classList.add("title", "title-style");
+  titleElement.textContent = title;
+
   const dateElement = document.createElement("div");
-  dateElement.classList.add("date");
+  dateElement.classList.add("date", "paragraph-style");
   dateElement.textContent = date;
 
   const descriptionElement = document.createElement("div");
   descriptionElement.classList.add("description");
   descriptionElement.textContent = description;
 
+  timelineItem.appendChild(titleElement);
   timelineItem.appendChild(dateElement);
   timelineItem.appendChild(descriptionElement);
 
@@ -46,8 +45,8 @@ function createTimelineItem(date, description) {
 const timeline = document.getElementById("timeline");
 
 timelineData.forEach((event) => {
-  const { date, description } = event;
-  const timelineItem = createTimelineItem(date, description);
+  const { title, date, description } = event;
+  const timelineItem = createTimelineItem(title, date, description);
   timeline.appendChild(timelineItem);
 });
 
