@@ -2,18 +2,20 @@
 const timelineData = [
   {
     title: "Game Collection",
-    date: "2022-01-01",
-    description: "Event 1 description",
+    date: "07-02-2021",
+    description:
+      "A Simple game collection to search and store your favourite games",
   },
   {
-    title: "Game Collection",
+    title: "Magic Deck",
     date: "2022-03-15",
-    description: "Event 2 description",
+    description:
+      "A Magic The Gathering application to get five random daily cards to share your luck on social networks",
   },
   {
-    title: "Game Collection",
+    title: "This Website",
     date: "2022-07-10",
-    description: "Event 3 description",
+    description: "Yep, this site :)",
   },
 ];
 
