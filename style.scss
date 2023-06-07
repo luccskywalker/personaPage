@@ -109,7 +109,7 @@ ul {
 #soft-skills {
   display: flex;
   flex-direction: column-reverse;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -221,7 +221,7 @@ section {
   position: relative;
   margin: 0 10px;
   width: 40px;
-  height: 40px;
+  height: 40 px;
 }
 .progress {
   width: 120px;
@@ -243,6 +243,38 @@ section {
 }
 .progress::-webkit-progress-value {
   background-color: rgb(236, 155, 62);
+}
+
+.soft-skill-list-item {
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+  > label {
+    text-transform: none;
+    font-size: 1.5em;
+    text-align: left;
+    order: 3;
+    margin-left: 3%;
+    width: 15vw;
+  }
+  > input[type="text"] {
+    width: 40px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
+    order: 2;
+  }
+  > input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    order: 1;
+  }
 }
 
 @keyframes p4 {
@@ -271,8 +303,8 @@ section {
   border: #000 dashed 3px;
 }
 .card-image {
-  width: 50px;
-  height: 50px;
+  width: 300px;
+  height: 170px;
 }
 .description {
   margin: 0 10px;
@@ -300,6 +332,9 @@ section {
 }
 
 @media (min-width: 600px) {
+  #home {
+    height: 70%;
+  }
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
