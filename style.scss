@@ -249,32 +249,32 @@ section {
   display: flex;
   align-items: center;
   margin-top: 1%;
-  > label {
-    text-transform: none;
-    font-size: 1.5em;
-    text-align: left;
-    order: 3;
-    margin-left: 3%;
-    width: 15vw;
-  }
-  > input[type="text"] {
-    width: 40px;
-    font-size: 1.2em;
-    text-align: center;
-    border: 0;
-    border-bottom: 1px solid black;
-    order: 2;
-  }
-  > input[type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    order: 1;
-  }
+}
+.soft-skill-label {
+  text-transform: none;
+  font-size: 1.5em;
+  text-align: left;
+  order: 3;
+  margin-left: 3%;
+  width: 15vw;
+}
+.soft-skill__text-input {
+  width: 40px;
+  font-size: 1.2em;
+  text-align: center;
+  border: 0;
+  border-bottom: 1px solid black;
+  order: 2;
+}
+.soft-skill__text-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  order: 1;
 }
 
 @keyframes p4 {
@@ -297,7 +297,7 @@ section {
   margin: 2%;
   text-align: center;
   background: #e0d1a8;
-  height: 30vh;
+  height: 35vh;
   position: relative;
   width: 20vw;
   border: #000 dashed 3px;
@@ -312,7 +312,7 @@ section {
 .timeline-item:before {
   background: #faf6eb;
   border-radius: 50%;
-  box-shadow: 20vw 0 0 0 #faf6eb, 0 30vh 0 0 #faf6eb, 20vw 30vh 0 0 #faf6eb,
+  box-shadow: 20vw 0 0 0 #faf6eb, 0 34vh 0 0 #faf6eb, 20vw 34vh 0 0 #faf6eb,
     0 40px 0 -20px #faf6eb, 0 60px 0 -20px #faf6eb, 0 80px 0 -20px #faf6eb,
     0 100px 0 -20px #faf6eb, 0 120px 0 -20px #faf6eb, 0 140px 0 -20px #faf6eb,
     0 160px 0 -20px #faf6eb, 0 180px 0 -20px #faf6eb, 0 200px 0 -20px #faf6eb,
@@ -349,13 +349,38 @@ section {
       ". . contact"
       ". footer .";
   }
-}
-.border-images {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  gap: 20%;
+  .border-images {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+  }
+  .image-border-icon {
+    margin-top: 20%;
+    cursor: pointer;
+    width: 50px;
+  }
+  .contact-section {
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+  }
+  .contact-image {
+    width: 200px;
+  }
+  .contact-subtitle {
+    border: black 1px solid;
+    background: black;
+    color: white;
+    top: -20px;
+    position: relative;
+  }
 }
 
 // @media (min-width: 700px) {

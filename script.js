@@ -4,9 +4,10 @@ const timelineData = [
     title: "Game Collection",
     date: "07-02-2021",
     cardImage: "assets/game-collection.png",
-    link: "https://github.com/luccskywalker/discCollection",
     description:
       "A Simple game collection to search and store your favourite games",
+    link: "<a href=https://github.com/luccskywalker/discCollection>git link</a> | <a href=https://github.com/luccskywalker/discCollection>deploy</a> ",
+
     tech: "Angular, html, css, js",
   },
   {
@@ -15,7 +16,7 @@ const timelineData = [
     cardImage: "assets/magic-deck.png",
     description:
       "A Magic The Gathering application to get five random daily cards to share your luck on social networks",
-    link: "https://github.com/luccskywalker/discCollection",
+    link: "<a href=https://github.com/luccskywalker/discCollection>git link</a> | <a href=https://github.com/luccskywalker/discCollection>deploy</a> ",
 
     tech: "Angular, html, css, js",
   },
@@ -24,7 +25,7 @@ const timelineData = [
     date: "2022-07-10",
     cardImage: "assets/persona-page.png",
     description: "Yep, this site :)",
-    link: "https://github.com/luccskywalker/discCollection",
+    link: "<a href=https://github.com/luccskywalker/discCollection>git link</a> | <a href=https://github.com/luccskywalker/discCollection>deploy</a> ",
 
     tech: "html, css, js",
   },
@@ -48,15 +49,15 @@ function createTimelineItem(title, date, cardImage, description, link, tech) {
   imageElement.src = cardImage;
 
   const descriptionElement = document.createElement("div");
-  descriptionElement.classList.add("description", "paragraph-style");
+  descriptionElement.classList.add("description", "description-style");
   descriptionElement.textContent = description;
 
   const linkElement = document.createElement("div");
-  linkElement.classList.add("link", "paragraph-style");
-  linkElement.textContent = link;
+  linkElement.classList.add("link", "link-style");
+  linkElement.innerHTML = link;
 
   const techElement = document.createElement("div");
-  techElement.classList.add("tech-used", "paragraph-style");
+  techElement.classList.add("tech-used", "tech-style");
   techElement.textContent = tech;
 
   timelineItem.appendChild(titleElement);
@@ -69,7 +70,6 @@ function createTimelineItem(title, date, cardImage, description, link, tech) {
   return timelineItem;
 }
 
-// Populate the timeline
 const timeline = document.getElementById("timeline");
 
 timelineData.forEach((event) => {
