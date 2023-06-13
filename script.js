@@ -1,3 +1,8 @@
+document.getElementById("menu-button").addEventListener("click", function () {
+  document.getElementById("menu-items").classList.toggle("show");
+  document.getElementById("menu-items").classList.toggle("hide");
+});
+
 // Timeline data
 const timelineData = [
   {

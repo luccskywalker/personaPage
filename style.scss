@@ -159,7 +159,39 @@ ul {
 section {
   border: solid 2px black;
 }
+@media (max-width: 600px) {
+  .menu-button {
+    font-size: large !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center;
+  }
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  #timeline {
+    padding: 0;
+  }
+  .menu-items {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .border-images > a {
+    display: none;
+  }
+}
 @media (max-width: 1334px) {
+  .menu-button {
+    display: none;
+  }
+  body {
+    padding: 5vw;
+  }
   #about {
     text-align: center;
     padding: 2%;
@@ -187,10 +219,47 @@ section {
     width: 95%;
     height: auto;
   }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contact-section {
+    float: right;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contact-image {
+    width: 100px;
+  }
+  .contact-subtitle {
+    background: #faf6eb;
+    color: black;
+    top: -20px;
+    position: relative;
+  }
+  #contact-git {
+    align-items: flex-end;
+  }
+  .soft-skill-label {
+    width: 28vw !important;
+    font-size: 2vh !important;
+  }
 }
 @media (min-width: 1335px) {
   #home {
     height: 70%;
+  }
+  .menu-button {
+    display: none;
   }
   .content {
     display: grid;
