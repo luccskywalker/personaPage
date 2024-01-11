@@ -11,8 +11,7 @@ const timelineData = [
     cardImage: "assets/game-collection.png",
     description:
       "A Simple game collection to search and store your favourite games",
-    link: "<a href=https://github.com/luccskywalker/discCollection>git link</a> | <a href=https://github.com/luccskywalker/discCollection>deploy</a> ",
-
+    link: "<a onclick='openInNewTab(\"https://github.com/luccskywalker/discCollection\")'>git link</a> | <a onclick='openInNewTab(\"https://github.com/luccskywalker/discCollection\")'>deploy</a> ",
     tech: "Angular, html, css, js",
   },
   {
@@ -21,8 +20,7 @@ const timelineData = [
     cardImage: "assets/magic-deck.png",
     description:
       "A Magic The Gathering application to get five random daily cards to share your luck on social networks",
-    link: "<a href=https://github.com/luccskywalker/discCollection>git link</a> | <a href=https://github.com/luccskywalker/discCollection>deploy</a> ",
-
+    link: "<a onclick='openInNewTab(\"https://github.com/luccskywalker/magicDeck\")'>git link</a> | <a onclick='openInNewTab(\"https://magic-deck.vercel.app\")'>deploy</a> ",
     tech: "Angular, html, css, js",
   },
   {
@@ -30,8 +28,7 @@ const timelineData = [
     date: "2022-07-10",
     cardImage: "assets/persona-page.png",
     description: "Yep, this site :)",
-    link: "<a href=https://github.com/luccskywalker/discCollection>git link</a> | <a href=https://github.com/luccskywalker/discCollection>deploy</a> ",
-
+    link: "<a onclick='openInNewTab(\"https://github.com/luccskywalker/personaPage\")'>git link</a> | <a onclick='openInNewTab(\"https://persona-page.vercel.app\")'>deploy</a> ",
     tech: "html, css, js",
   },
 ];
@@ -99,3 +96,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+function openInNewTab(url) {
+  window.open(url, "_blank").focus();
+}
